@@ -38,6 +38,7 @@
 <![endif]-->
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<?php wp_head(); ?> 
 </head>
 
 <body>
