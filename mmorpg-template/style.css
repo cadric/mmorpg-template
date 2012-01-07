@@ -1,0 +1,236 @@
+/*
+Theme Name: mmorpg-template
+Theme URI: http://platoon.dk
+Description: something something
+Author: cadric
+Author URI: http://platoon.dk
+Version: 1.0
+*/
+body {  margin: 10px; font-size: .8em; line-height: 1.4; }
+body, button, input, select, textarea { background-color:#1a1a1a; font-family:sans-serif; color:gray; }
+@font-face { font-family: 'GentiumBasicRegular'; src: url('fonts/GenBasR-webfont.eot'); src: local('Gentium Basic'), local('GentiumBasic'), url('fonts/GenBasR-webfont.woff') format('woff'), url('fonts/GenBasR-webfont.ttf') format('truetype'), url('fonts/GenBasR-webfont.svg#GentiumBasic') format('svg'); }
+
+ul { list-style:none; margin:0 0 15px; padding:0; }
+li { margin:0; padding:2px 0 2px 5px; }
+
+a { color: #fff;  text-decoration: none;  }
+a:visited { color: #0296cf; }
+a:hover { color: #fff; text-decoration: underline; }
+
+h1,h2,h3,h4,h5,h6 { margin:0; padding:0; font-family: 'GentiumBasicRegular',sans-serif; }
+
+
+#wrapper { background-color:#141414; border:1px solid #000; margin:0 auto; width:900px; border-radius:10px; box-shadow:0 0 40px #000;}
+
+header { width: 99.8%; background: #242424; border:1px solid #313131; font-size:.7em; text-align:center; text-transform:uppercase; border-top-left-radius:10px; border-top-right-radius:10px; }
+
+article { display: inline-block; vertical-align: top; width:596px; }
+aside { margin:0; display: inline-block; vertical-align: top; width:300px; list-style: none;}
+
+.post {
+background:#242424 url(img/bgarticle.png) repeat-x;
+border:1px solid #313131;
+display: inline-block; vertical-align: top; *display: inline;
+margin:0 0 2px 2px;
+}
+
+.post-title { padding-left:40px; font-size: 80%; }
+.post-title h2, .aside-title h3 { text-shadow: 0 0 3px #fff; }
+.post-title,.aside-title { background:#242424 url(img/titlebg2.png) repeat-x; height:35px; }
+.post img { border:2px solid #313131; box-shadow:0 0 10px #000; float:left; margin:0 5px; }
+.post-comments { background:url(img/post-comments.png) no-repeat; display:table; float:right; font-size:.7em; height:35px; margin: -2px 0 0; width:35px; }
+.post-comments a { display:table-cell; padding-bottom:7px; text-align:center; vertical-align:middle; }
+.post-date { background:url(img/post-calendar.png) no-repeat; color:#fff; float:left; font-size:.7em; height:35px; margin: -2px 0 0; width:35px; }
+.post-month {display:block; margin-top:5px; text-align:center; }
+.post-day { display:block; text-align:center; }
+.entry { float:left; margin:-12px 10px 0; text-align:justify; }
+
+.aside { margin:0 2px 2px; background:#242424 url(img/bgsidebar.png) repeat; border:1px solid #313131; }
+.aside-title { color:#fff; display:table; width:100%; }
+.aside h3 { display:table-cell; padding:0 0 5px 10px; vertical-align:middle; font-size:110% }
+
+
+#searchform { text-align: center; padding: 5px;}
+#searchform #s { background: url(img/searchbg.png); border:1px solid #313131; border-radius:5px; }
+#searchsubmit {  padding: 5px ; border:1px solid #313131; border-radius:10px; }
+
+
+footer { border-top:1px solid #000; background:#242424 url(img/bgarticle.png) repeat-x; border-radius: 0px 0px 10px 10px; text-align:center; width:100%; }
+
+/* Main menu */
+
+#menu-wth
+{
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	list-style: none;  
+background:url(img/navbg.png) repeat-x;
+}
+
+#menu-wth li
+{
+	float: left;
+	padding: 0;
+	position: relative;
+	line-height: 0;
+}
+
+#menu-wth a 
+{
+	float: left;
+	height: 25px;
+	padding: 0 25px;
+	color: #999;
+	text-transform: uppercase;
+	font: bold 12px/25px Arial, Helvetica;
+	text-decoration: none;
+	text-shadow: 0 1px 0 #000;
+}
+
+#menu-wth li:hover > a
+{
+	color: #fafafa;
+}
+
+*html #menu-wth li a:hover /* IE6 */
+{
+	color: #fafafa;
+}
+
+#menu-wth li:hover > ul
+{
+	display: block;
+}
+
+/* Sub-menu */
+
+#menu-wth ul
+{
+    list-style: none;
+    margin: 0;
+    padding: 0;    
+    display: none;
+    position: absolute;
+    top: 25px;
+    left: 0;
+    z-index: 99999;    
+    background: #242424;
+    box-shadow: 0 0 2px rgba(255,255,255,.5);	
+    border-radius: 5px;
+}
+
+#menu-wth ul ul
+{
+  top: 0;
+  left: 150px;
+}
+
+#menu-wth ul li
+{
+    float: none;
+    margin: 0;
+    padding: 0;
+    display: block;  
+    box-shadow: 0 1px 0 #111111, 0 2px 0 #777;
+}
+
+#menu-wth ul li:last-child
+{   
+    box-shadow: none;    
+}
+
+#menu-wth ul a
+{    
+    padding: 10px;
+	height: 10px;
+	width: 130px;
+	height: auto;
+    line-height: 1;
+    display: block;
+    white-space: nowrap;
+    float: none;
+	text-transform: none;
+}
+
+*html #menu-wth ul a /* IE6 */
+{    
+	height: 10px;
+}
+
+*:first-child+html #menu-wth ul a /* IE7 */
+{    
+	height: 10px;
+}
+
+#menu-wth ul a:hover
+{
+    background: #0186ba;
+	background: -moz-linear-gradient(#04acec,  #0186ba);	
+	background: -webkit-gradient(linear, left top, left bottom, from(#04acec), to(#0186ba));
+	background: -webkit-linear-gradient(#04acec,  #0186ba);
+	background: -o-linear-gradient(#04acec,  #0186ba);
+	background: -ms-linear-gradient(#04acec,  #0186ba);
+	background: linear-gradient(#04acec,  #0186ba);
+}
+
+#menu-wth ul li:first-child > a
+{
+    border-radius: 5px 5px 0 0;
+}
+
+#menu-wth ul li:first-child > a:after
+{
+    content: '';
+    position: absolute;
+    left: 30px;
+    top: -8px;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 8px solid #242424;
+}
+
+#menu-wth ul ul li:first-child a:after
+{
+    left: -8px;
+    top: 12px;
+    width: 0;
+    height: 0;
+    border-left: 0;	
+    border-bottom: 5px solid transparent;
+    border-top: 5px solid transparent;
+    border-right: 8px solid #242424;
+}
+
+#menu-wth ul li:first-child a:hover:after
+{
+    border-bottom-color: #04acec; 
+}
+
+#menu-wth ul ul li:first-child a:hover:after
+{
+    border-right-color: #04acec; 
+    border-bottom-color: transparent; 	
+}
+
+
+#menu-wth ul li:last-child > a
+{
+    border-radius: 0 0 5px 5px;
+}
+
+/* Clear floated elements */
+#menu-wth:after 
+{
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+
+* html #menu-wth             { zoom: 1; } /* IE6 */
+*:first-child+html #menu-wth { zoom: 1; } /* IE7 */
