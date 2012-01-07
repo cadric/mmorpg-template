@@ -7,7 +7,7 @@ Author URI: http://platoon.dk
 Version: 1.0
 */
 body {  margin: 10px; font-size: .8em; line-height: 1.4; }
-body, button, input, select, textarea { background-color:#1a1a1a; font-family:sans-serif; color:gray; }
+body, button, input, select, textarea { font-family:sans-serif; color:gray; }
 @font-face { font-family: 'GentiumBasicRegular'; src: url('fonts/GenBasR-webfont.eot'); src: local('Gentium Basic'), local('GentiumBasic'), url('fonts/GenBasR-webfont.woff') format('woff'), url('fonts/GenBasR-webfont.ttf') format('truetype'), url('fonts/GenBasR-webfont.svg#GentiumBasic') format('svg'); }
 
 ul { list-style:none; margin:0 0 15px; padding:0; }
